@@ -1,0 +1,43 @@
+html, body {padding:0;margin:0;font-family:'Verdana';}
+
+
+.body { width: 100%; }
+.body table, .body table tr, .body table tr td { width: 100%; padding:0;margin:0;border-collapse:collapse;}
+.body .header { width:100%; background-color: red; height: 150px;}
+.body .header .menu-wrapper ul.logo, .body .header .menu-wrapper ul.menu { display: inline-block; }
+.body .header .menu-wrapper ul.logo li.logo-item, .body .header .menu-wrapper ul.menu li.menu-item {
+	display: inline-block;
+	list-style-type: none;
+	font-size: 1.5em;
+	padding: 0 35px;
+	margin:0 5em;
+}
+.body .header .menu-wrapper ul.logo li.logo-item { margin: 0; }
+
+/*----- Mobile -----*/
+@media only screen and (max-width: 1000px) { 
+	
+	.body .header .menu-wrapper {
+		width: 100%;
+		background-color: red;
+	}
+
+	.body .header .menu-wrapper ul.logo {display:none;}
+	.body .header .menu-wrapper ul.logo li.logo-item, .body .header .menu-wrapper ul.menu li.menu-item {
+		display: block;
+		padding: 0;
+		margin:	0 ;
+		font-size: 2.5em;
+		width: 100%;
+	}
+}
+
+/*----- Small Screens -----*/
+@media only screen and (min-width: 1001px) and (max-width: 1350px) {
+	.body .header .menu-wrapper ul.logo li.logo-item, .body .header .menu-wrapper ul.menu li.menu-item {
+		padding: 0;
+		margin:0 5em;
+	}
+	.body .header .menu-wrapper ul.logo li.logo-item { margin: 0; }
+}
+
