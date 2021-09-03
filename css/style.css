@@ -60,6 +60,7 @@ a:active { text-decoration: none; }
 .body .header .mobile-menu-bars .mobile-menu-button-closed {display:none;} 
 .body .header .menu-wrapper { position: relative; transition: all 0.3s;}
 .body .header .menu-wrapper ul.logo, .body .header .menu-wrapper ul.menu { display: inline-block; }
+.body .header .menu-wrapper .logo-img img { width: 150px; height: auto; padding-left: 35px; cursor: pointer;}
 .body .header .menu-wrapper ul.menu { position: absolute; right: 0; }
 .body .header .menu-wrapper ul.logo li.logo-item, .body .header .menu-wrapper ul.menu li.menu-item {
 	display: inline-block;

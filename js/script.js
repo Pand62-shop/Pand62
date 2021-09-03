@@ -5,7 +5,6 @@ $(document).ready(function() {
 	$('li.about-menu a').on('click', function() {
 		// Smooth Scroll
 		document.querySelector('.about').scrollIntoView({ behavior: 'smooth' });
-		hideMobileMenu();	
 	});
 	
 	//-----------------------
@@ -13,7 +12,6 @@ $(document).ready(function() {
 	$('li.markt-menu a').on('click', function() {
 		// Smooth Scroll
 		document.querySelector('.marktplaats').scrollIntoView({ behavior: 'smooth' });
-		hideMobileMenu();	
 	});
 	
 	//-----------------------
@@ -21,15 +19,13 @@ $(document).ready(function() {
 	$('li.fotos-menu a').on('click', function() {
 		// Smooth Scroll
 		document.querySelector('.fotos').scrollIntoView({ behavior: 'smooth' });
-		hideMobileMenu();	
 	});
 	
 	//-----------------------
 	// Home Menu Item
-	$('li.logo-menu a').on('click', function() {
+	$('.menu-wrapper .logo-img').on('click', function() {
 		// Smooth Scroll
 		document.querySelector('.home-anchor').scrollIntoView({ behavior: 'smooth' });
-		hideMobileMenu();	
 	});
 	
 	
@@ -47,7 +43,7 @@ $(document).ready(function() {
 		// hide menu
 		$(".header .menu-wrapper").css({'display': 'block', 'height': 'auto'});				
 		// hide bars, show times
-		$(this).css({'display': 'none'});
+		$('.mobile-menu-button-open').css({'display': 'none'});
 		$('.mobile-menu-button-closed').css({'display': 'block'});
 	}
 	
@@ -55,7 +51,7 @@ $(document).ready(function() {
 		// hide menu
 		$(".header .menu-wrapper").css({'display': 'none', 'height': '0'});		
 		// hide times, show bars
-		$(this).css({'display': 'none'});
+		$('.mobile-menu-button-closed').css({'display': 'none'});
 		$('.mobile-menu-button-open').css({'display': 'block'});
 	}
 })
