@@ -21,6 +21,13 @@ $(document).ready(function() {
 		document.querySelector('.fotos').scrollIntoView({ behavior: 'smooth' });
 	});
 	
+	//-----------------------
+	// Home Menu Item
+	$('li.logo-menu a').on('click', function() {
+		// Smooth Scroll
+		document.querySelector('.home-anchor').scrollIntoView({ behavior: 'smooth' });
+	});
+	
 	
 })
 
