@@ -5,6 +5,10 @@
 		<meta charset="utf-8">
 		<title>Pand62 - Shop</title>
 		<link rel="stylesheet" href="../Pand62/css/style.css">
+		
+		
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+		<script src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
 		<script src="../Pand62/js/script.js"></script>
 	</head>
 	
@@ -21,14 +25,13 @@
 							<div class="menu-wrapper">
 								<ul class="logo">
 									<li class="logo-item">
-										<a><img alt="logo" src="../Pand62/images/logo.png" /></a>
+										<a href="#home"><img alt="logo" src="../Pand62/images/logo.png" /></a>
 									</li>
 								</ul>
 								<ul class="menu">
-									<li class="menu-item"><a href="#home">Home</a></li>
-									<li class="menu-item"><a href="#about">Over Mij</a></li>
-									<li class="menu-item"><a href="#marktplaats">Marktplaats</a></li>
-									<li class="menu-item"><a href="#fotos">Foto's</a></li>
+									<li class="menu-item about-menu"><a>Over Mij</a></li>
+									<li class="menu-item markt-menu"><a>Marktplaats</a></li>
+									<li class="menu-item fotos-menu"><a>Foto's</a></li>
 								</ul>
 							</div>
 						</td>
@@ -48,7 +51,7 @@
 								<table>
 									<tr class="row row-1" id="about">
 										<td>
-											<div class="about-me">
+											<div class="about">
 												Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
 												Curabitur purus est, finibus nec accumsan iaculis, fermentum sed nisl. 
 												Suspendisse elementum finibus erat in placerat. 

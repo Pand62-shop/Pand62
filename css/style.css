@@ -1,6 +1,5 @@
 html, body {padding:0;margin:0;font-family:'Verdana';background-color: #FFFFFF;}
 body { padding-top: 150px; }
-* {scroll-behavior: smooth;}
 
 /*********************************************/
 /* Colors ************************************/
@@ -86,6 +85,7 @@ a:active { text-decoration: none; }
 	transform: translate(-50%);
 	height: 100vh;
 	padding: 15em 0;
+	font-size: 20px;
 }
 
 .body table.body-content .main-body-content .row-1 {
@@ -143,6 +143,19 @@ a:active { text-decoration: none; }
 		font-size: 2.5em;
 		width: 100%;
 	}
+	
+	
+	
+	
+	.body table.body-content .main-body-content .row div {
+		font-size: 2em;
+		width: 75%;
+	}
+	
+	
+	
+	
+	
 }
 
 /*----- Small Screens -----*/
