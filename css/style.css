@@ -121,6 +121,7 @@ a.inline_link {color: var(--beige);}
 
 .body .body-content .main-body-content table tr td.filled { width: 100vw; position: relative; }
 .body .body-content .main-body-content table tr td.filled div {display: inline-block; padding: 15em 0 15em 0; margin:0;}
+.body .body-content .main-body-content table tr.row-5 td.filled div { padding: 1em 0 0em 0;}
 .body .body-content .main-body-content table tr td.filled div.middle { width: 50%;}
 .body .body-content .main-body-content table tr td.filled div.empty { width: 24%;}
 
@@ -214,13 +215,17 @@ a.inline_link {color: var(--beige);}
 		font-size: 2em;
 		width: 75%;
 	}
+	.body table.body-content .main-body-content .row-5 div table tr td {
+		font-size: 1.25em;
+	}
 	.body .body-content .main-body-content table tr td.filled div.middle {
 		width: 100%;
 	}
+
 	.body .body-content .main-body-content table tr td.filled div {
 		padding: 0
 	}
-	.body .body-content .main-body-content table tr td.filled div h1, .body .body-content .main-body-content table tr td.filled div p {
+	.body .body-content .main-body-content table tr td.filled div h1, .body .body-content .main-body-content table tr td.filled div p, .body .body-content .main-body-content table tr td.filled div a {
 		padding: 0 25px;
 	}
 	
