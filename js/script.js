@@ -18,7 +18,7 @@ $(document).ready(function() {
 	// Foto's Menu Item
 	$('li.fotos-menu a').on('click', function() {
 		// Smooth Scroll
-		document.querySelector('.fotos').scrollIntoView({ behavior: 'smooth' });
+		document.querySelector('.fotos_hor').scrollIntoView({ behavior: 'smooth' });
 	});
 	
 	//-----------------------

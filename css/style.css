@@ -29,12 +29,15 @@ a:visited { text-decoration: none; color: var(--black); }
 a:hover { text-decoration: none; }
 a:active { text-decoration: none; }
 
-
+a.inline_link {color: var(--beige);}
 
 
 
 .body { width: 100%; }
-.body table, .body table tr, .body table tr td { width: 100%; padding:0;margin:0;border-collapse:collapse;}
+.body table.header, .body table.header tr, .body table.header tr td,
+.body table.body-content, .body table.body-content tr, .body table.body-content tr td
+ { width: 100%; padding:0;margin:0;border-collapse:collapse;}
+ .body table.row-table {padding:0;margin:0;border-collapse:collapse;}
 
 
 /*********************************************/
@@ -60,6 +63,10 @@ a:active { text-decoration: none; }
 	top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+	font-size: 2.5em;
+	color: var(--darkBlue);
+    background: rgba(255, 255, 255, 0.25);
+    width: 100%;
 }
 
 /*********************************************/
@@ -105,51 +112,57 @@ a:active { text-decoration: none; }
 
 
 
-
-
 /*********************************************/
 /* Content ***********************************/
 /*********************************************/
 .body table.body-content {
 	width: 100%;
 }
-.body table.body-content .main-body-content .row div {
-	width: 50%;
-	position: relative;
-	left: 50%;
-	transform: translate(-50%);
-	height: 100vh;
-	padding: 15em 0;
-	font-size: 20px;
-}
 
-.body table.body-content .main-body-content .row-1 {
+.body .body-content .main-body-content table tr td.filled { width: 100vw; position: relative; }
+.body .body-content .main-body-content table tr td.filled div {display: inline-block; padding: 15em 0 15em 0; margin:0;}
+.body .body-content .main-body-content table tr td.filled div.middle { width: 50%;}
+.body .body-content .main-body-content table tr td.filled div.empty { width: 24%;}
+
+.body .body-content .main-body-content .row-1 {
 	background-color: var(--darkBlue);
 	color: var(--white);
 }
-.body table.body-content .main-body-content .row-2 {
+.body .body-content .main-body-content .row-2 {
 	background-color: var(--white);
 	color: var(--black);
 }
-.body table.body-content .main-body-content .row-3 {
+.body .body-content .main-body-content .row-3 {
 	background-color: var(--darkGray);
 	color: var(--white);
 }
-.body table.body-content .main-body-content .row-4 {
+.body .body-content .main-body-content .row-4 {
 	background-color: var(--white);
 	color: var(--black);
 }
-
-
-
-
-
-
-
-
-
-
-
+.body .body-content #fotos .middle table, .body .body-content #fotos .middle table tr {
+	width: 100%;
+}
+.body .body-content .main-body-content .row td {
+	padding: 50px 0;
+	font-size: 20px;
+}
+.body .body-content .main-body-content .row .fotos_hor table tr td {
+	width: calc(100%/3);
+}
+ body .body-content .main-body-content .row .fotos_vert table tr td {	 
+	width: 50%;
+ }
+.body .body-content .main-body-content .row .fotos_vert .img_wrapper img {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%,0%);
+}
+.body .body-content .main-body-content .row .fotos_hor .img_wrapper img {
+	width: 100%;
+}.body .body-content .main-body-content .row .fotos_vert .img_wrapper img {
+	width: 50%;
+}
 
 
 
@@ -184,16 +197,42 @@ a:active { text-decoration: none; }
 	}
 	.body .header .mobile-menu-bars .mobile-menu-button-open {display: block;}
 	
-	
+	/* Header */
+	.top-header .content-wrapper {
+		background-position: calc(100%/3) calc(100%/3);
+		background-size: contain;
+		height: 1000px;
+		background-color: #585550;
+	}
 	
 	/* Content */
 	.body table.body-content .main-body-content .row div {
 		font-size: 2em;
 		width: 75%;
 	}
+	.body .body-content .main-body-content table tr td.filled div.middle {
+		width: 100%;
+	}
+	.body .body-content .main-body-content table tr td.filled div {
+		padding: 0
+	}
+	.body .body-content .main-body-content table tr td.filled div h1, .body .body-content .main-body-content table tr td.filled div p {
+		padding: 0 25px;
+	}
 	
-	
-	
+	/* Fotos */
+	.body table.body-content .main-body-content #fotos div {
+		width: 100%;
+	}
+	.body .body-content .main-body-content .row .fotos_hor table tr td,.body .body-content .main-body-content .row .fotos_vert table tr td {
+		width:100%;
+		display: block;
+	}
+	.body .body-content .main-body-content .row .fotos_vert .img_wrapper img, .body .body-content .main-body-content .row .fotos_hor .img_wrapper img {
+		position: relative;
+		left: 50%;
+		transform: translate(-50%,0%);
+	}
 	
 	
 }
