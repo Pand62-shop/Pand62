@@ -140,6 +140,10 @@ a.inline_link {color: var(--beige);}
 	background-color: var(--white);
 	color: var(--black);
 }
+.body .body-content .main-body-content .row-5 {
+	background-color: var(--darkBlue);
+	color: var(--white);
+}
 .body .body-content #fotos .middle table, .body .body-content #fotos .middle table tr {
 	width: 100%;
 }
